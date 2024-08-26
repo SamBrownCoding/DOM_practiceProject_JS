@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Project</title>
+</head>
+
+<body>
+    <div class="header text-center">
+        <h1>Temp Convertor Site</h1>
+        <br><br>
+    </div>
+    <div class="optionSelection">
+        <div class="container">
+            <div class="row-padding">
+                <label for="tempsOne">Pick Temperature unit:</label>
+                <select name="tempsOne" id="tempsOne">
+                    <option value="">--Please choose an option--</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <br><br>
+                <input type="textbox" placeholder="Temperature number" name="Ntemp" id="Ntemp">
+                <br><br>
+                <label for="tempstwo">Pick Temperature unit you want Convert to:</label>
+                <select name="tempstwo" id="tempstwo">
+                    <option value="">--Please choose an option--</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Convert">
+                <br><br>
+                <h3>Result:</h3> 
+                <br><br>
+                <h1><output name="result" id="result"></output></h1>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/app.js"></script>
+
+</html>
