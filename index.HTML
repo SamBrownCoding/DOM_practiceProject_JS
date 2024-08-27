@@ -5,41 +5,45 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Project</title>
 </head>
-
 <body>
+    <div class="overlay"></div>
     <div class="header text-center">
-        <h1>Temp Convertor Site</h1>
+        <h1>Temp Conversion</h1>
         <br><br>
     </div>
-    <div class="optionSelection">
+    <div class="optionSelection text-center">
         <div class="container">
             <div class="row-padding">
-                <label for="tempsOne">Pick Temperature unit:</label>
-                <select name="tempsOne" id="tempsOne">
+                <label for="tempsOne"><h1>Pick Temperature unit:</h1></label>
+                <br><br>
+                <select name="tempsOne" id="fromUnit" class="fromUnit">
                     <option value="">--Please choose an option--</option>
-                    <option value="celsius">Celsius</option>
-                    <option value="fahrenheit">Fahrenheit</option>
-                    <option value="kelvin">Kelvin</option>
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
+                </select>
+                <label> to </label>
+                <select name="tempstwo" id="toUnit" class="toUnit">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Celsius">Celsius</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Kelvin">Kelvin</option>
                 </select>
                 <br><br>
-                <input type="textbox" placeholder="Temperature number" name="Ntemp" id="Ntemp">
+                <input type="number" placeholder="Temperature number" name="inputTemp" id="inputTemp" class="inputTemp">
                 <br><br>
-                <label for="tempstwo">Pick Temperature unit you want Convert to:</label>
-                <select name="tempstwo" id="tempstwo">
-                    <option value="">--Please choose an option--</option>
-                    <option value="celsius">Celsius</option>
-                    <option value="fahrenheit">Fahrenheit</option>
-                    <option value="kelvin">Kelvin</option>
-                </select>
+
+                <input type="submit" value="Convert" class="convert" id="convertBtn">
+                <input type="reset" value="Reset" id="reset" class="reset">
                 <br><br>
-                <input type="submit" value="Convert">
-                <br><br>
-                <h3>Result:</h3> 
-                <br><br>
-                <h1><output name="result" id="result"></output></h1>
+                <h3>Result:</h3>
+                <h4 name="result" id="result"></h4>
             </div>
         </div>
     </div>

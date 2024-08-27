@@ -1,0 +1,107 @@
+body {
+    background-color: transparent;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../media/Nature.jpg);
+}
+
+.overlay {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    opacity: 30%;
+}
+
+.header h1 {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    position: relative;
+    text-shadow: 7px 7px 10px #000;
+}
+
+body .optionSelection {
+    background-size: cover !important;
+    position: relative;
+    margin: 0 auto;
+}
+
+.row-padding {
+    background-color: darkslategrey;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    border-radius: 15%;
+    box-shadow: 2px 4px 10px 1px #000;
+}
+
+.row-padding label {
+    color: #ffffff;
+}
+
+.row-padding h3 {
+    color: #ffffff;
+}
+
+.row-padding h4 {
+    color: #ffffff;
+}
+
+select {
+    border-radius: 10px;
+}
+
+#inputTemp {
+    border-radius: 10px;
+}
+
+.convert {
+    border-radius: 10px;
+    /*border: none;*/
+}
+
+.convert:hover{
+    background-color: #007bff;
+}
+
+.reset {
+    border-radius: 10px;
+    /*border: none;*/
+}
+
+.reset:hover{
+    background-color: #007bff;
+}
+
+.inputTemp:focus {
+    /* Blue border color */
+    border-color: #007bff;
+    /* shadow effect */
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+    outline-color: #007bff;
+}
+
+.fromUnit:focus {
+    /* Blue border color */
+    border-color: #007bff;
+    /* shadow effect */
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+    outline-color: #007bff;
+}
+
+.toUnit:focus {
+    /* Blue border color */
+    border-color: #007bff;
+    /* shadow effect */
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+    outline-color: #007bff;
+}
