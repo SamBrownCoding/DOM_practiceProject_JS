@@ -72,10 +72,20 @@ submitBtn.addEventListener("click", () => {
         //*No conversion needed if units are the same
     } else {
         result = inputTemp;
+        alert("                                     IT'S SAME TEMPERATURE!!")
     }
 
-    document.getElementById("result").innerText = `${fromUnit} to ${toUnit}\n ${parseInt(result).toFixed(2)}°`;
+   resultAnswer(result, fromUnit, toUnit);
+
 });
+
+function resultAnswer(result, fromUnit, toUnit){
+    document.getElementById("result").innerText = `${fromUnit} to ${toUnit}\n ${parseInt(result).toFixed(2)}°`;
+    document.getElementById("result").style.border = "solid 5px"
+    document.getElementById("result").style.borderColor = "#203636";
+    document.getElementById("result").style.width = "35%";
+    document.getElementById("result").style.display = "inline-block";
+}
 
 let ClearUp = document.getElementById("reset");
 
@@ -84,6 +94,7 @@ ClearUp.addEventListener("click", () => {
     inputTemp.value = "";
     toUnit.value = "";
     document.getElementById("result").innerText = "";
+    document.getElementById("result").style.border = "solid 0px"
 })
 
 
