@@ -38,29 +38,45 @@ body .optionSelection {
 
 .row-padding {
     /*background:linear-gradient(9deg, darkslategrey 0%, rgb(94, 151, 151) 100%);*/
-      box-shadow:0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb,-4px 8px 8px rgba(0,0,0,0.1), -8px 16px 16px rgba(0,0,0,0.1), -16px 32px 32px rgba(0,0,0,0.15), -32px 64px 64px rgba(0,0,0,0.25);
-      align-items: center;
-  background-image: linear-gradient(to right, #054f7d, #00a7cf, #efe348, #861a54, #054f7d);
-  background-size: 600%;
-  background-position: 0 0;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-  animation-name: gradients;
+    box-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, -4px 8px 8px rgba(0, 0, 0, 0.1), -8px 16px 16px rgba(0, 0, 0, 0.1), -16px 32px 32px rgba(0, 0, 0, 0.15), -32px 64px 64px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    background-image: linear-gradient(to right, #054f7d, #00a7cf, #efe348, #861a54, #054f7d);
+    background-size: 600%;
+    background-position: 0 0;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: gradients;
     padding-bottom: 5%;
     padding-top: 5%;
     border-radius: 15%;
     width: 60%;
     margin-left: 20%;
-    /*box-shadow: 2px 4px 10px 1px #000;*/
 }
 
 @keyframes gradients {
-    0% { background-position: 0  0; }
-   25% { background-position:50% 0; }
-   50% { background-position:90% 0; }
-   60% { background-position:60%;   }
-   75% { background-position:40%;   }
-  100% { background-position: 0  0; }
+    0% {
+        background-position: 0 0;
+    }
+
+    25% {
+        background-position: 50% 0;
+    }
+
+    50% {
+        background-position: 90% 0;
+    }
+
+    60% {
+        background-position: 60%;
+    }
+
+    75% {
+        background-position: 40%;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
 }
 
 .row-padding label {
@@ -93,7 +109,7 @@ select {
     /*border: none;*/
 }
 
-.convert:hover{
+.convert:hover {
     background-color: #273f5a;
     color: #eee;
 }
@@ -104,10 +120,10 @@ select {
     /*border: none;*/
 }
 
-.reset:hover{
+.reset:hover {
     background-color: #273f5a;
     color: #eee;
-    
+
 }
 
 .inputTemp:focus {

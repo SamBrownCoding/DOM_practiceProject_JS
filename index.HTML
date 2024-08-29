@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Project</title>
 </head>
+
 <body>
     <div class="overlay"></div>
     <div class="header text-center">
@@ -19,9 +20,10 @@
     </div>
     <div class="optionSelection text-center">
         <div class="container">
-            <div class="leftside"></div>
             <div class="row-padding">
-                <label for="tempsOne"><h1>Pick Temperature unit:</h1></label>
+                <label for="tempsOne">
+                    <h1>Pick Temperature unit:</h1>
+                </label>
                 <br><br>
                 <select name="tempsOne" id="fromUnit" class="fromUnit">
                     <option value="">--Please choose an option--</option>
@@ -39,14 +41,12 @@
                 <br><br>
                 <input type="number" placeholder="Temperature number" name="inputTemp" id="inputTemp" class="inputTemp">
                 <br><br>
-
                 <input type="submit" value="Convert" class="convert" id="convertBtn">
                 <input type="reset" value="Reset" id="reset" class="reset">
                 <br><br>
                 <h3>Result:</h3>
                 <h4 name="result" id="result"></h4>
             </div>
-            <div class="rightside"></div>
         </div>
     </div>
 </body>
